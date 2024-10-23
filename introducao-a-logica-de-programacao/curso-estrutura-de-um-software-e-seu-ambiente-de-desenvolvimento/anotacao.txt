@@ -1,0 +1,16 @@
+## Input - Process - Output
+__Input (Entrada)__: são momentos com o usuário
+ex: comando de entrada:
+ - procura um pedido
+ - solicitar um pedido
+
+__Process (Processamento)__: São verificações e ações para realizar o pedido do usuário.
+ex:
+ - verifica se o pagamento foi aprovado
+ - verifica se o restaurante está aberto
+ - começa a preparar o seu pedido
+
+__Output (Saída)__: são comandos de saída, para retornar alguma coisa ou dar algum posicionamento ou mensagem para o usuário
+ex:
+ - Seu pedido está sendo levado até você
+ 
