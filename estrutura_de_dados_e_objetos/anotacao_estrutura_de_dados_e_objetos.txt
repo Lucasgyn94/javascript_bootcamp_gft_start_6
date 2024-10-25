@@ -1,0 +1,4 @@
+## => JSON
+* JSON = JavaScript Object Notation
+* é um objeto simples composto por chave e valor com o objetivo de transferir dados.
+
