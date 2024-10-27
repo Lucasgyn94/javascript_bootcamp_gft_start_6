@@ -3,6 +3,13 @@
 Esta API fornece um sistema para gerenciamento de heróis, permitindo operações CRUD (Criar, Ler, Atualizar, Deletar).<br>
 Desenvolvida com Node.js e Express, a mesma foi inspirada a partir do desafio lançado pelo Expert da Digital Innovation One no bootcamp GFT Start 6.
 
+
+## Características
+API RESTful para gerenciamento de heróis<br>
+Implementação do padrão Factory para criação de heróis e de ataques<br>
+Estratégia de ataque única para cada tipo de herói<br>
+Documentação da API com Swagger<br>
+
 ## 🌟 Funcionalidades
 * Criar, ler, atualizar e deletar heróis<br>
 * Listar todos os heróis cadastrados<br>

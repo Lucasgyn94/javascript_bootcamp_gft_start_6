@@ -1,0 +1,6 @@
+[submodule "nodejs-heroes-adventure-full-stack"]
+	path = nodejs-heroes-adventure-full-stack
+	url = https://github.com/Lucasgyn94/nodejs-heroes-adventure-full-stack.git
+[submodule "heroes-server"]
+	path = heroes-server
+	url = https://github.com/Lucasgyn94/nodejs-heroes-adventure-full-stack.git

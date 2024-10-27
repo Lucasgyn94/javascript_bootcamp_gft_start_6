@@ -1,3 +1,5 @@
+import {HeroiFactory} from '../factories/heroiFactory.js';
+
 export class Database {
     static #heroes = new Map();
 
@@ -16,9 +18,20 @@ export class Database {
 
     static update(id, updatedData) {
         const hero = this.#heroes.get(id);
-        if (!hero) return null;
+
+        if (!hero) {
+            return null;
+        }
 
         const updatedHero = { ...hero, ...updatedData };
+
+        if (updatedData.type && updatedData.type !== hero.type) {
+            const newHero = HeroiFactory.create(updatedData.type, updatedHero.name, updatedHero.age);
+            newHero.id = id;
+            this.#heroes.set(id, newHero);
+            return newHero.toJSON();    
+        }
+
         this.#heroes.set(id, updatedHero);
         return updatedHero;
     }

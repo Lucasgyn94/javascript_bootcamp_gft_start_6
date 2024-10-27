@@ -35,13 +35,13 @@ export class HeroiController {
     static updateHero(req, res) {
         try {
             const { id } = req.params;
-            const { name, age } = req.body;
+            const { name, age, type} = req.body;
 
-            if (!name && !age) {
-                return res.status(400).json({ error: 'Nome ou idade devem ser fornecidos para atualização' });
+            if (!name && !age && !type) {
+                return res.status(400).json({ error: 'Nome, idade ou tipo devem ser fornecidos para atualização' });
             }
 
-            const updatedHero = Database.update(id, { name, age });
+            const updatedHero = Database.update(id, { name, age, type });
             
             if (!updatedHero) {
                 return res.status(404).json({ error: 'Herói não encontrado' });
